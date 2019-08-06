@@ -21,3 +21,22 @@ Main security requirements which we aim to meet are following:-
 # Technologies to use
  1) Microsoft Azure Blockchain 
  2) Ethereum
+
+# Use
+
+1. Run the development console.
+    ```javascript
+    truffle develop
+    ```
+
+2. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
+    ```javascript
+    compile
+    migrate
+    ```
+
+3. Run the `liteserver` development server (outside the development console) for front-end hot reloading. Smart contract changes must be manually recompiled and migrated.
+    ```javascript
+    // Serves the front-end on http://localhost:3000
+    npm run dev
+    ```
